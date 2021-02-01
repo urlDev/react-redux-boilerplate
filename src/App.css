@@ -1,0 +1,59 @@
+body {
+  background: #15202b;
+  overflow: hidden;
+}
+
+.container__outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+#title {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+#border {
+  animation: colorChange 15s infinite alternate ease-in-out;
+}
+
+@keyframes colorChange {
+  0% {
+    fill: #980b8a;
+  }
+  20% {
+    fill: #69cdcd;
+  }
+  40% {
+    fill: #ffd4c4;
+  }
+  60% {
+    fill: #1c528a;
+  }
+  80% {
+    fill: #e45865;
+  }
+  100% {
+    fill: #980b8a;
+  }
+}
